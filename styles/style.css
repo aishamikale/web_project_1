@@ -10,22 +10,120 @@
 }
 
 .header {
+  background-color: #f2f2f2;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* parameters for the header section */
 }
 
+.logo {
+  background-position: center;
+  background-size: cover;
+  width: 154px;
+  height: 31px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.png);
+  z-index: 2;
+  
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  margin-left: 64px;
+  z-index: 1;
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
+.header__main-image {
+  background-image: url(../images/header-image.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
+.header__blue-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
 }
 
+.two-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px;
+}
+
+.two-columns__heading {
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px; 
+}
+
+.two-columns__paragraph {
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.digit {
+  
+}
+
 /* including elements with key-value modifiers */
+/*comment out until we get to this portion
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
+*/
