@@ -31,7 +31,6 @@
   left: 64px;
   background-image: url(../images/logo_place_header.png);
   z-index: 2;
-  
 }
 
 .header__title {
@@ -51,6 +50,7 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
+  margin-bottom: 30px;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -67,6 +67,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-bottom: 30px;
   width: 765px;
   height: 608px;
   z-index: 1;
@@ -114,9 +115,60 @@
   font-weight: bold;
 }
 
-.digit {
-  
+.digits {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+  width: 1100px;
+  display: block;
 }
+
+.digits__title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.digits__subtitle {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 135px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+} 
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+  list-style: none;
+}
+
+.table__cell {
+  width: 250px;
+  margin-right: 0;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  margin-top: 20px;
+}
+
 
 /* including elements with key-value modifiers */
 /*comment out until we get to this portion
