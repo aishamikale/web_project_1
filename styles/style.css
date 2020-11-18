@@ -12,6 +12,7 @@
 .header {
   background-color: #f2f2f2;
   display: flex;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -30,32 +31,32 @@
   top: 30px;
   left: 64px;
   background-image: url(../images/logo_place_header.png);
-  z-index: 2;
+ /* z-index: 2;*/
 }
 
 .header__title {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
+  /*justify-content: flex-start;*/
+  /*position: relative;*/
   width: 730px;
+  margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  margin-left: 64px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__subtitle {
   position: absolute;
-  left: 64px;
   bottom: 30px;
-  margin-bottom: 30px;
+  left: 64px;
+  margin: 0;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 3;
+  /*z-index: 3;*/
 }
 
 .header__link {
@@ -67,10 +68,12 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   width: 765px;
   height: 608px;
   z-index: 1;
+  background-position: center;
+  background-size: cover;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -83,26 +86,37 @@
   width: 568px;
 }
 
-.two-columns {
+.description {
+  border: 2px solid rgb(30, 255, 0);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 80%;
-  margin: 100px;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.two-columns__heading {
-  color: #2f80ed;
+.two-columns {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.two-columns__brief {
+  width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  width: 175px;
-  margin: 0;
+  color: #2f80ed;
+  /*
+  margin: 0;*/
 }
 
 .two-columns__main-text {
   width: 80%;
-  min-width: 784px; 
+  /*min-width: 784px;*/
 }
 
 .two-columns__paragraph {
@@ -116,34 +130,35 @@
 }
 
 .digits {
+  border: 2px solid rgb(30, 255, 0);
   margin-top: 100px;
-  margin-right: auto;
-  margin-bottom: 100px;
-  margin-left: auto;
-  width: 1100px;
-  display: block;
 }
 
 .digits__title {
+  border: 2px dashed yellow;
+  text-align: center;
+  margin: auto;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin: auto;
 }
 
 .digits__subtitle {
+  border: 2px dashed pink;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 60%;
   margin-top: 20px;
-  margin-left: 135px;
+  margin-left: 220px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 } 
 
 .table {
+  border: 2px solid red;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -169,13 +184,136 @@
   margin-top: 20px;
 }
 
+.feynman {
+  margin-top: 100px;
+  height: 790px;
+  position: relative;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: bottom left;
+  background-color: #f2f2f2;
+  border: 2px solid blue;
+}
+
+.feynman__title {
+  border: 2px solid red;
+  width: 775px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin: auto;
+  z-index: 4;
+  /*width: 775px;
+  justify-content: center;
+  margin: auto;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;*/
+}
+
+.feynman__subtitle {
+  border: 2px solid red;
+  display: flex;
+  margin-top: 70px;
+  /*margin-right: 200px;*/
+  justify-content: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.feynman__link {
+  border: 2px solid red;
+  color: #2f80ed;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.kaufman {
+  border: 2px solid rgb(30, 255, 0);
+  background-color: #1f1f1f;
+  margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.section-title_theme_dark {
+  background-color: #1f1f1f;
+  color: white;
+  border: 2px dashed yellow;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle_theme_dark {
+  background-color: #1f1f1f;
+  color: white;
+  border: 2px dashed pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 220px;
+  width: 60%;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table__theme_dark {
+  background-color: #1f1f1f;
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+  list-style: none;
+}
 
 /* including elements with key-value modifiers */
-/*comment out until we get to this portion
+/*comment out until we get to this portion*/
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
-*/
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
