@@ -94,9 +94,7 @@
   width: 80%;
   min-width: 784px;
   display: flex;
-  margin: 0;
   justify-content: space-between;
-  width: 80%;
   margin: auto;
 }
 
@@ -313,13 +311,6 @@
 
 .footer__column_content_copyright{
   flex-basis: 711px;
-}
-
-.logo{
-  width: 183px;
-  height: 35px;
-  background-position: center;
-  background-size: cover;
 }
 
 .logo_place_footer {
