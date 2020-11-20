@@ -72,7 +72,7 @@
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__blue-pic {
+.header__square-pic {
   position: absolute;
   top: 64px;
   right: 0;
@@ -85,9 +85,6 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .two-columns {
@@ -111,7 +108,6 @@
 }
 
 .two-columns__paragraph {
-  margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
 }
@@ -122,26 +118,21 @@
 
 .digits {
   margin-top: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
-.digits__title {
-  text-align: center;
+.section-title {
   margin: auto;
+  text-align: center;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
 
-.digits__subtitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section-subtitle {
+  text-align: center;
+  margin: 20px auto;
   width: 60%;
-  margin-top: 20px;
-  margin-left: 280px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -186,11 +177,12 @@
 }
 
 .feynman__title {
+  text-align: center;
+  margin: auto;
   width: 775px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin: auto;
   z-index: 4;
 }
 
@@ -292,14 +284,10 @@
 }
 
 .footer {
-  display: flex;
-  position: relative;
+  box-sizing: border-box;
   background-color: #1f1f1f;
   min-height: 350px;
-  margin-top: 90px;
-  padding: 60px 40px 40px 60px;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 60px 0 40px 0;
 }
 
 .footer__columns{
@@ -309,31 +297,30 @@
   margin: auto;
 }
 
+.footer_column {
+  min-height: 350px;
+  display: flex;
+}
+
 .footer__column_content_copyright{
   flex-basis: 711px;
+  position: relative;
 }
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.png);
-  position: absolute;
-  top: 30px;
-  left: 0px;
-  margin-left: 60px;
 }
 
 .footer__author{
-  color: #4f4f4f;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-left: 60px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 200px;
+  padding: 18px 0 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.footer_column {
-  min-height: 350px;
 }
 
 .footer__column-heading{
@@ -346,6 +333,7 @@
 
 .footer__column-links {
   list-style: none;
+  padding: 0;
 }
 
 .footer__list-item{
@@ -356,7 +344,8 @@
 .footer__link {
   line-height: 30px;
   font-size: 18px;
-  color: #4f4f4f;
+  color: white;
+  text-decoration: none;
 }
 
 /*facebook and instagram icons*/
