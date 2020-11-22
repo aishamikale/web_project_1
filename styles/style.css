@@ -12,10 +12,12 @@
 .header {
   background-color: #f2f2f2;
   display: flex;
+  align-items: center;
   position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  margin-bottom: 100px;
   /* parameters for the header section */
 }
 
@@ -34,9 +36,7 @@
 }
 
 .header__title {
-  display: flex;
-  align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
@@ -49,18 +49,20 @@
   bottom: 30px;
   left: 64px;
   margin: 0;
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
+  text-decoration: none;
   color: #2f80ed;
 }
 
 .header__main-image {
-  background-image: url(../images/header-image.png);
+  /*background-image: url(../images/header-image.png);*/
   position: absolute;
   bottom: 0;
   right: 0;
@@ -79,12 +81,11 @@
   background-color: #2f80ed;
   height: 568px;
   width: 568px;
+  overflow: hidden;
 }
 
 .description {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .two-columns {
@@ -92,7 +93,7 @@
   min-width: 784px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .two-columns__brief {
@@ -105,11 +106,18 @@
 
 .two-columns__main-text {
   width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
+  margin: 30px 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
+}
+
+.two-columns__paragraph:nth-of-type(3n) {
+ margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -117,11 +125,11 @@
 }
 
 .digits {
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .section-title {
-  margin: auto;
+  margin: 0 auto 20px;
   text-align: center;
   width: 60%;
   line-height: 1.15;
@@ -129,9 +137,10 @@
   font-weight: bold;
 }
 
+
 .section-subtitle {
   text-align: center;
-  margin: 20px auto;
+  margin: auto;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -144,7 +153,8 @@
   align-content: space-between;
   justify-content: space-between;
   width: 1100px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
@@ -155,17 +165,24 @@
 }
 
 .table__heading {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
-  margin-top: 20px;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.table__author {
+  margin: 0; 
+  padding: 0;
 }
 
 .feynman {
-  margin-top: 100px;
   height: 790px;
   padding-top: 100px;
   position: relative;
@@ -179,7 +196,7 @@
 .feynman__title {
   text-align: center;
   margin: auto;
-  width: 775px;
+  max-width: 775px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -187,20 +204,20 @@
 }
 
 .feynman__subtitle {
-  display: flex;
   margin-top: 70px;
-  justify-content: center;
   line-height: 51px;
+  text-align: center;
   font-size: 36px;
   font-weight: normal;
   z-index: 3;
 }
 
 .feynman__link {
-  color: #2f80ed;
   position: absolute;
   top: 50%;
   right: 48px;
+  color: #2f80ed;
+  text-decoration: none;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -208,7 +225,6 @@
 
 .kaufman {
   background-color: #1f1f1f;
-  margin-top: 90px;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -218,35 +234,14 @@
 
 .section-title_theme_dark {
   color: white;
-  text-align: center;
-  margin: auto;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 280px;
-  width: 60%;
-  margin-top: 20px;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
 }
 
-.table__theme_dark {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-  width: 1100px;
-  margin: auto;
-  list-style: none;
+.table_theme_dark {
+  width: 200px;
 }
 
 /* including elements with key-value modifiers */
@@ -256,18 +251,6 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-.table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .kaufman__triangle {
@@ -284,72 +267,84 @@
 }
 
 .footer {
-  box-sizing: border-box;
-  background-color: #1f1f1f;
   min-height: 350px;
-  padding: 60px 0 40px 0;
+  background-color: #1f1f1f;
 }
 
-.footer__columns{
-  width: 90%;
+.footer__columns {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0 40px;
 }
 
-.footer_column {
-  min-height: 350px;
+.footer__column {
   display: flex;
+  flex-direction: column;
 }
 
-.footer__column_content_copyright{
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
   position: relative;
 }
 
-.logo_place_footer {
-  background-image: url(../images/logo_place_footer.png);
+.footer__column_logo {
+  width: 183px;
+  height: 35px;
 }
 
-.footer__author{
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-top: 200px;
-  padding: 18px 0 18px 0;
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__author {
+  margin: 18px 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  color: white;
 }
 
-.footer__column-heading{
-  color: white;
+.footer__column-heading {
+  margin: 0;
+  padding: 0 0 20px 0;
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  color: white;
 }
 
 .footer__column-links {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.footer__list-item {
   padding: 0;
 }
 
-.footer__list-item{
+.footer__list-item:nth-of-type(3n){
   padding-bottom: 16px;
 }
-
 
 .footer__link {
   line-height: 30px;
   font-size: 18px;
-  color: white;
+  font-weight: normal;
   text-decoration: none;
+  color: white;
 }
 
-/*facebook and instagram icons*/
-.footer__social-icon{
+.footer__social-icon {
+  margin-right: 10px;
   width: 16px;
   height: 16px;
 }
