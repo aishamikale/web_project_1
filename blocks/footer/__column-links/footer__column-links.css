@@ -1,0 +1,9 @@
+.footer__column-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer__column-links:nth-of-type(3n){
+    padding-bottom: 16px;
+  }
