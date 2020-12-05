@@ -1,4 +1,4 @@
-.index {
+/*.index {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
   /* so here we've set a minimum page width */
@@ -7,7 +7,7 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+/*}*/
 
 /*.header {
   background-color: #f2f2f2;
@@ -148,6 +148,7 @@
   font-weight: normal;
 } */
 
+/*
 .table {
   display: flex;
   flex-wrap: wrap;
@@ -236,8 +237,6 @@
   color: white;
 }
 
-/* including elements with key-value modifiers */
-/*comment out until we get to this portion*/
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -336,4 +335,4 @@
   margin-right: 10px;
   width: 16px;
   height: 16px;
-}
+}*/
