@@ -1,5 +1,7 @@
 @import url(./__iframe/video__iframe.css);
+@import url(./__iframe/video__iframes.css);
 
 .video {
-    margin-bottom: 160px;
+    margin: 0 auto;
 }
+   
