@@ -1,0 +1,8 @@
+.resources__logo_website_teded {
+    background-image: url(../../../../images/resources-tedED.png);
+}
+
+.resources__logo_website_teded:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}

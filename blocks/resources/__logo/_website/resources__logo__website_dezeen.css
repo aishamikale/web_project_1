@@ -1,0 +1,8 @@
+.resources__logo_website_dezeen {
+    background-image: url(../../../../images/resources-dezeen.png);
+}
+
+.resources__logo_website_dezeen:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}

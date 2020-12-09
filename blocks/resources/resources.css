@@ -1,9 +1,10 @@
 @import url(./__logo-zone/resources__logo-zone.css);
 @import url(./__logo/resources__logo.css);
-@import url(./_place/resources__logo_place_first.css);
-@import url(./_place/resources__logo_place_second.css);
-@import url(./_place/resources__logo_place_third.css);
-@import url(./_place/resources__logo_place_last.css);
+@import url(./__logo/_website/resources__logo_website_teded.css);
+@import url(./__logo/_website/resources__logo_website_medium.css);
+@import url(./__logo/_website/resources__logo__website_dezeen.css);
+@import url(./__logo/_website/resources__logo_website_goodreads.css);
+
 
 .resources {
   margin-top: 100px;
