@@ -1,9 +1,10 @@
-@import url(./__logo/resources__logo.css);
-@import url(./__logo/_dezeen/resources__logo_dezeen.css);
-@import url(./__logo/_goodreads/resources__logo_goodreads.css);
-@import url(./__logo/_medium/resources__logo_medium.css);
-@import url(./__logo/_teded/resources__logo_teded.css);
 @import url(./__logo-zone/resources__logo-zone.css);
+@import url(./__logo/resources__logo.css);
+@import url(./_logo/resources_logo_dezeen.css);
+@import url(./_logo/resources_logo_goodreads.css);
+@import url(./_logo/resources_logo_medium.css);
+@import url(./_logo/resources_logo_teded.css);
+
 
 .resources {
   margin-top: 100px;
